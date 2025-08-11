@@ -4,7 +4,9 @@ import requests
 from pathlib import Path
 
 # Replace this with your Discord Webhook URL later
-WEBHOOK_URL = "https://discord.com/api/webhooks/PASTE-YOUR-WEBHOOK-HERE"
+WEBHOOK_URL = import os
+WEBHOOK_URL = os.getenv("https://discord.com/api/webhooks/1404560131416526898/D7A_0ywlo10cLLO_Btj8xHuPTr89Vd2oXUI_0DtrowT2FBifTJRviHfYYUcUcszl2tq3")
+
 
 # Example data for now
 ioc_data = [
