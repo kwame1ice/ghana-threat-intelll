@@ -22,12 +22,8 @@ jobs:
       run: pip install requests
 
     - name: Run collector script
-    -     - name: Run collector script
-      run: |
-        python collector.py
       env:
         WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-
       run: python collector.py
 
     - name: Upload results
